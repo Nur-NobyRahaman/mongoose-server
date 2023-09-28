@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 require('./src/dbCon')
 const productRouter = require('./src/routes/Producrs');
 const userRouter = require('./src/routes/Users')
-const Port = process.env.Port || 500;
+const Port = process.env.Port || 5000;
 
 app.use(express.json())
 app.use(productRouter)
