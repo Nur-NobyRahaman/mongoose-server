@@ -16,19 +16,19 @@ router.post('/users',async(req,res)=>{
 })
 
 // get all user
-router.get('/users',async(req,res)=>{
-    try {
-        const userDate= await User.find();
-        if(userDate){
-            res.status(200).send(userDate)
-        }
-        else{
-            res.status(404).send({message: "failed"}) 
-        }
-    } catch (error) {
-        res.status(404).send({message: error.message})
-    }
+// router.get('/users',async(req,res)=>{
+//     try {
+//         const userDate= await User.find();
+//         if(userDate){
+//             res.status(200).send(userDate)
+//         }
+//         else{
+//             res.status(404).send({message: "failed"}) 
+//         }
+//     } catch (error) {
+//         res.status(404).send({message: error.message})
+//     }
    
-})
+// })
 
 module.exports=router;
