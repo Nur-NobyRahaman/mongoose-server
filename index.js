@@ -17,5 +17,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(Port, () => {
-    console.log(`mongoose app listening on port ${port}`)
+    console.log(`mongoose app listening on port ${Port}`)
 })
